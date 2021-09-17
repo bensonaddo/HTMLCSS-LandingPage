@@ -271,3 +271,19 @@ Finally, add the class text-primary to these elements in the index.html file:
   font-size: 16px;
   color: #364147;
 }
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module2. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module2.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+
+Header
+
+The header of the page has several elements. In this task, we'll style the general header as well as the logo.
+
+Open main.css, and below the other styles create a class called .header-nav that adds a 1px bottom border with the color #a0a0a0
+*/
+.header-nav {
+  border-bottom: 1px #a0a0a0;
+}
