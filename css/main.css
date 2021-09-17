@@ -1,9 +1,273 @@
 /************* BASE STYLES *************/
-* { box-sizing: border-box; }
-body { font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 1.4; color: #364147; margin: 0; }
-input, button { font-family: inherit; font-size: inherit; }
-a { color: #faa541; text-decoration: none; }
-ul { padding: 0; margin: 0; list-style: none; }
-nav { padding: 10px 0; }
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+/* * {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #364147;
+  margin: 0;
+}
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+a {
+  color: #faa541;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav {
+  padding: 10px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+} */
 /***************************************/
+
+/* Container 
+To center content in the body of the page we'll need to create a container that is positioned and styled in CSS and then this class will be applied to several HTML elements in our index.html.
+
+To start, in the css/main.css file create a .container class that sets the top and bottom margins to 0 and the left and right to auto.
+
+Set the max-width to 1170px.
+
+
+Container Class Attribute
+
+This task applies the CSS that you wrote in the previous step so that you can see how it affects the rendered HTML. This is a pattern that you'll be following often in this project - write some CSS, then apply it to HTML.
+
+Add the container class that was just created to the following HTML elements in index.html:
+
+First <div> in the <nav>
+First <div> in the <!-- HERO --> <section>.
+First <div> in the <!-- MAIN CONTAINER --> block.
+The first <section> in the <footer>
+*/
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+
+/*
+Sections as Flex Containers
+
+In main.css create a rule that selects all <section> elements in the index.html. Adjust the display property in this rule so that each <section> acts as a flex container.
+*/
+section {
+  display: flex;
+}
+
+/* Flex Utility 
+
+Flex Utilities
+
+The layout of this landing page will be done using CSS flexbox. Instead of repeating ourselves across our classes we will pull the more commonly used properties into their own classes. Below you will find three classes and the properties they should contain. Create these three classes below the section rule just created.
+
+.flex - display: flex
+.flex-column - flex-direction: column
+.flex-one - flex: 1
+
+Flex Class Attribute
+
+Now, apply the flex utility class to several HTML elements in the index.html file:
+
+flex
+
+First <div> in the <nav>.
+First <div> in the <!-- BRANDING --> block.
+First <div> in the <!-- SEARCH --> block.
+First <ul> in the <!-- SEARCH --> block.
+First and second <div>'s in the <!-- PROFILE --> block.
+First <div> in the <!-- HERO --> <section>.
+First <div> in the <!-- SALE BANNER --> <section>.
+Second <div> in the <!-- FULL BANNER --> <section>.
+First <div> in the <!-- PS DEMO --> <section>.
+
+Flex Column and Flex One Class Attributes
+
+Now, apply the flex-column and flex-one utility classes to these HTML elements in index.html :
+
+flex-column
+
+First nested <div> in the <!-- PROFILE --> block.
+First <div> in the <!-- HERO --> <section>.
+Second <div> in the <!-- FULL BANNER --> <section>.
+First <div> in the <!-- PS DEMO --> <section>.
+flex-one
+
+First <div> in the <!-- SEARCH --> block.
+*/
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-one {
+  flex: 1;
+}
+
+/* Align Flex Utilities 
+Alignment Flex Utilities
+
+To adjust the positioning and alignment of individual elements within a flex container, let's create three additional classes in main.css:
+
+.align-center - align-items: center
+.center - justify-content: center
+.space-between - justify-content: space-between
+
+
+Alignment Flex Utilities Class Attributes
+
+We will apply these new alignment flex classes to several HTML elements in the index.html file:
+
+align-center
+
+First <div> in the <!-- BRANDING --> block.
+First <div> in the <!-- SEARCH --> block.
+First <div> in the <!-- PROFILE --> block.
+First <div> in the <!-- HERO --> <section>.
+First <div> in the <!-- SALE BANNER --> <section>.
+Second <div> in the <!-- FULL BANNER --> <section>.
+First <div> in the <!-- PS DEMO --> <section>.
+
+Space Between Utilities Class Attributes
+
+We will apply these new alignment flex classes to several HTML elements in the index.html file:
+
+center
+
+First <div> in the <!-- HERO --> <section>.
+First <div> in the <!-- SALE BANNER --> <section>.
+Second <div> in the <!-- FULL BANNER --> <section>.
+space-between
+
+First <div> in the <nav>.
+First <ul> in the <!-- SEARCH --> block.
+First <section> in the <footer>.
+*/
+.align-center {
+  align-items: center;
+}
+.center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+/* Buttons
+Buttons
+
+Each button will have a consistent look and feel. In main.css, add the class .btn with the following styles:
+
+add a cursor
+remove any borders
+padding should be 6px top and bottom and 12px left and right
+Round the corners by 3px
+change the line height to 1.4
+Also, Create two different button styles btn-default and btn-primary. The color of the text for both should be white. The btn-default background color is #faa541. The btn-primary background color should be #364147.
+
+
+Buttons Class Attribute
+
+In index.html, find the only <a> element in the <!-- FULL BANNER --> block. Give this element the btn class and the button btn-default class.
+
+Then, Find the sign up <button> element in the <footer>. Give this element the btn class and the button btn-primary class.
+*/
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 3px;
+  line-height: 1.4;
+}
+
+.btn-default {
+  color: white;
+  background-color: #faa541;
+}
+.btn-primary {
+  color: white;
+  background-color: #364147;
+}
+
+/* Form Controls 
+We only have a few form controls, but let's make a custom class for them anyway. Add a new class called .form-control below the button classes in main.css.
+
+This class should change the display to block, and add padding of 6px top/bottom and 12px left/right. Next, add a 1px solid border with a stroke color of #a0a0a0. The text in the control should have a color of #8598a2. Finally, add a line height of 1.4
+
+
+Form Controls Class Attribute
+
+Find the <input> element with the placeholder of Enter email address in the <footer> element in the index.html file. Add the form-control class to the <input>.
+*/
+.form-control {
+  display: block;
+  padding: 6px 12px;
+  border: solid 1px #a0a0a0;
+  color: #8598a2;
+  line-height: 1.4;
+}
+
+/* Typography
+
+There are some base typographic styles we'll use throughout the page.
+
+In the main stylesheet, below the .form-control class, add three classes: .text-light, .text-secondary, and .text-primary.
+
+The light and secondary classes should have a font size of 30px. The light color is #a0a0a0 and the secondary color is #faa541.
+
+The primary class should have a font size of 16px and a color of #364147.
+
+Typography Class Attributes
+
+These are the required index.html modifications. Add the class listed to the correct element.
+
+text-light
+
+<div> with contents Couples retreat weekend
+text-secondary
+
+<div> with contents Save an extra 20%
+
+Typography Primary Style Class Attribute
+
+Finally, add the class text-primary to these elements in the index.html file:
+
+<div> with contents when you buy 2 pairs of boots
+<div> in footer with contents Customer Support
+<div> in footer with contents Company Info
+<div> in footer with contents Privacy &amp; Terms
+<div> in footer with contents Follow Us
+<div> in footer with contents &copy;Pluralsight 2018
+
+*/
+.text-light {
+  font-size: 30px;
+  color: #a0a0a0;
+}
+.text-secondary {
+  font-size: 30px;
+  color: #faa541;
+}
+.text-primary {
+  font-size: 16px;
+  color: #364147;
+}
