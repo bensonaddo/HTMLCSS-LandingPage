@@ -287,3 +287,22 @@ Open main.css, and below the other styles create a class called .header-nav that
 .header-nav {
   border-bottom: 1px #a0a0a0;
 }
+
+/*
+Brand
+
+Next, setup a class called .brand below the .header-nav class that sets the element size to 170x85 pixels. Adjust the left margin by negative 15 pixels and the right margin by 60 pixels.
+*/
+.brand {
+  size: 170x85px;
+}
+
+/*
+Logo
+
+The logo needs to fit within the 170x85 container. To do this, create a .logo class that sets the max-width to 100% and the height to auto.
+*/
+.logo {
+  max-width: 100%;
+  height: auto;
+}
