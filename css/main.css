@@ -917,3 +917,25 @@ background size and position - 23px 23px center
   background-size: 23px 23px;
   background-position: center;
 }
+
+/*
+Social Icons
+
+There are four anchor tags in the <ul> in the Follow Us list. These links will have icons for social media platforms.
+
+Create four classes .twitter, .facebook, .instagram, and .pinterest.
+
+Each rule should have a single declaration of background-image. Set this to the correct URL for each image. Hint: Look in the img directory.
+*/
+.twitter {
+  background-image: url('../img/twitter.svg');
+}
+.facebook {
+  background-image: url('../img/facebook.svg');
+}
+.instagram {
+  background-image: url('../img/instagram.svg');
+}
+.pinterest {
+  background-image: url('../img/pinterest.svg');
+}
