@@ -478,15 +478,15 @@ Next, select both the <h1> and <h2> elements in the .hero <div> and set a few pr
 
 Adjust the font size to 63px, bump up the font weight to 700, and set the line-height to 0.9.
 */
-.hero div h1 {
+.hero h1 {
   position: relative;
-  margin-left: -30px;
+  left: -30px;
 }
-.hero div h2 {
+.hero h2 {
   color: #faa541;
 }
-.hero div h1,
-.hero div h2 {
+.hero h1,
+.hero h2 {
   font-size: 63px;
   font-weight: 700;
   line-height: 0.9;
@@ -500,7 +500,7 @@ Select all <p> elements in the .hero <div> and change these font properties: let
 
 For this element's margin, zero out the top, left and right. Add 10px to the bottom. Hint: Using the 3 value shorthand for margin.
 */
-.hero div p {
+.hero p {
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 21px;
@@ -508,7 +508,7 @@ For this element's margin, zero out the top, left and right. Add 10px to the bot
   margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0; */
-  margin: 0 10px 0;
+  margin: 0 0 10px;
 }
 
 /*
