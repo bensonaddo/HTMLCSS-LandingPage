@@ -796,3 +796,9 @@ Make sure the button is first in the stacking order by changing the z-index to 1
   letter-spacing: 1px;
   z-index: 1;
 }
+
+/*
+Full Banner Class Attributes
+
+Locate the <!-- FULL BANNER --> block in the index.html file. Give the <section> in this block the class full-banner. Give the first <div> the class of full-banner-image and the second <div> a class of full-banner-sidebar.
+*/
