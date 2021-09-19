@@ -735,3 +735,23 @@ Style the <h4> heading in the full banner by creating a rule with a selector of 
   color: #637f94;
   line-height: 1;
 }
+
+/*
+Full Banner Sidebar Text Decoration
+
+Let's create a decorative element after the heading. This element will be after the .full-banner-sidebar h4 element. Add the :after pseudo class to this selector to create a rule with the following declarations:
+
+content - ""
+width & height - 100x1 pixels
+background-color - #faa541
+margin - 20px auto
+display - block
+*/
+.full-banner-sidebar h4:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #faa541;
+  margin: 20px auto;
+  display: block;
+}
