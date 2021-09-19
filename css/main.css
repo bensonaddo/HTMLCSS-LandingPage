@@ -439,3 +439,64 @@ We have three classes to apply in index.html - .profile, .account, and .profile-
 
 In the <!-- PROFILE --> block assign the first <div> the class profile. Add the account class to the nested <div>. Finally, give the <div> that surrounds the image with an src of img/profile-pic.jpg the profile-pic class.
 */
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module3. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module3.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+Hero Section
+
+Moving further down the page, let's focus on styling the hero image and text.
+
+For the image, construct a class called .hero that adjusts several background properties.
+
+Set background-image to the hero.jpg image (find it in the img folder in the project), height to 400px, and background-size to cover.
+
+Center the image horizontally and vertically using background-position.
+
+Finally, transform the text to uppercase.
+*/
+.hero {
+  background-image: image('../img/hero.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  text-transform: uppercase;
+}
+
+/*
+Hero Headings
+
+To create a more visually appealing hero section we'll add some styling to the <h1> and <h2> elements.
+
+First, create a rule that selects the <h1> in the .hero <div>. Have that rule adjust the position of that <div> by making it relative and then move it to the left by -30px.
+
+Select all <h2> elements in the .hero <div> and change the text color to #faa541.
+
+Next, select both the <h1> and <h2> elements in the .hero <div> and set a few properties to make them consistent.
+
+Adjust the font size to 63px, bump up the font weight to 700, and set the line-height to 0.9.
+*/
+.hero div h1 {
+  position: relative;
+  margin-left: -30px;
+}
+.hero div h2 {
+  color: #faa541;
+}
+.hero div h1,
+.hero div h2 {
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 0.9;
+}
+/*
+Hero Paragraph
+
+Now, let's change the paragraph element to match the <h1> and <h2> elements.
+
+Select all <p> elements in the .hero <div> and change these font properties: letter spacing to 2px, font weight to 700, font size to 21px.
+
+For this element's margin, zero out the top, left and right. Add 10px to the bottom. Hint: Using the 3 value shorthand for margin.
+*/
