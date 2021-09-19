@@ -992,3 +992,9 @@ letter-spacing - 1px
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/*
+Newsletter Class Attributes
+
+In index.html find the <div> after the social icons <ul> and apply a class of newsletter. Give the nested <div> with the content Email Updates a class of link-header. In the <div> immediate below, apply a class of link-subheader.
+*/
