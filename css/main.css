@@ -868,3 +868,20 @@ Each list has a header, so create a rule with a selector of .link-header and tra
   font-weight: 700;
   margin-bottom: 15px;
 }
+
+/*
+
+Links
+
+The anchor tags in the footer should receive the styling: white text color, uppercase, font size of 12px, and the padding should be set to 0 0 4px. Whenever the link is hovered over set text-decoration to underline.
+*/
+footer a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 0 4px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
