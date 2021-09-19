@@ -516,3 +516,28 @@ Hero Class Attribute
 
 Open the index.html file and locate the first <section> after the <nav> and apply a class attribute of hero.
 */
+
+/*
+Banner Container and Image
+
+The sales banner is the first thing in the main content area of the page. Let's draw attention to it.
+
+First, create a class called .banner and adjust the margin of the container set it to 55px 15px.
+
+The banner is the full width of its parent so set width to 100%.
+
+To set the banner apart from the rest of the content set the top border to 1px solid #a0a0a0 and the bottom border to 1px solid #a0a0a0.
+
+Give each element some spacing by setting padding to 25px 0.
+
+Fix the width of the images to 250px by selecting all <img> elements that are descendants of the element with a class of .banner.
+*/
+.banner {
+  margin: 55px 15px;
+  width: 100%;
+  border-top: 1px solid #a0a0a0;
+  padding: 25px 0;
+}
+.banner img {
+  width: 250px;
+}
