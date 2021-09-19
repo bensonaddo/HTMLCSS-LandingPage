@@ -755,3 +755,28 @@ display - block
   margin: 20px auto;
   display: block;
 }
+
+/*
+Full Banner Sidebar Text Styling
+
+For the text below the heading we're going to adjust a few properties. Select the first <div> in the side bar using the group of selectors .full-banner-sidebar > div:nth-of-type(1), and set the following:
+
+font-size - 60px
+font-weight - 700
+line-height - 1
+Select the second <div> in the side bar using the group of selectors .full-banner-sidebar > div:nth-of-type(2):
+
+font-size - 25px
+font-weight - 200
+letter-spacing - 3px
+*/
+.full-banner-sidebar > div:nth-of-type(1) {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+.full-banner-sidebar > div:nth-of-type(2){
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
