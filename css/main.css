@@ -707,3 +707,18 @@ Set, background image, size, and position to vista.jpg, cover, and top center, r
   background-position: top center;
   min-height: 400px;
 }
+
+/*
+Full Banner Sidebar
+
+The text of the banner is on the right and takes up 40% of the width of the banner, so use flex: 0 0 41.666667% in a rule with a selector of .full-banner-sidebar to adjust this.
+
+Set the background-color to #364147, transform the text to uppercase, add padding of 30px and change the text color to white(#ffffff).
+*/
+.full-banner-sidebar {
+  flex: 0 0 41.666667%;
+  background-color: #364147;
+  text-transform: uppercase;
+  padding: 30px;
+  color: #ffffff;
+}
