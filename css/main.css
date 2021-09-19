@@ -306,3 +306,15 @@ The logo needs to fit within the 170x85 container. To do this, create a .logo cl
   max-width: 100%;
   height: auto;
 }
+
+/*
+Header, Branding, and Logo Class Attributes
+
+Switch over to index.html and we'll apply the newly created header and branding classes to the correct elements.
+
+Apply the header-nav class to the <nav>.
+
+Find the <!-- BRANDING --> block and apply the brand class to the first <div> in the block.
+
+Then, apply the logo class to the <img> tag with the src of img/carved-rock-logo.png
+*/
