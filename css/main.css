@@ -601,3 +601,20 @@ The images in these columns should be full width. Create a rule that selects the
 .category img {
   width: 100%;
 }
+
+/*
+Category Text
+
+The text of each category should have the following properties declared in a rule with the selector .category-text:
+
+color - #364147
+padding - 30px 0
+text-transform - uppercase
+text-align - center
+*/
+.category-text {
+  color: #364147;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
