@@ -843,3 +843,15 @@ footer:after {
   right: 0;
   z-index: -1;
 }
+
+/*
+Lists
+
+All of the content contained in the footer is in unordered lists. To equally space these lists, create a .lists rule and set flex to 0 0 75%. Add a gap between these columns that adds up to 30px(left/right - 15px). The top and bottom padding should be set to 40px.
+*/
+.lists {
+  flex: 0 0 75%;
+  left: 15px;
+  right: 15px;
+  padding: 40px 15px;
+}
