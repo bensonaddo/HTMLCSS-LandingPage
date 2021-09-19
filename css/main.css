@@ -536,6 +536,7 @@ Fix the width of the images to 250px by selecting all <img> elements that are de
   margin: 55px 15px;
   width: 100%;
   border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
   padding: 25px 0;
 }
 .banner img {
