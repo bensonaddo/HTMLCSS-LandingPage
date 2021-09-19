@@ -649,3 +649,13 @@ line-height - 1
   font-weight: 700;
   line-height: 1;
 }
+
+/*
+Category Class Attributes
+
+Open index.html and locate the <!-- CATEGORIES --> block.
+
+There are four top-level <div> elements in a <section>. Give each of these a category class.
+
+Next, find the <div>'s after each image in the category <div>'s and apply a class of category-text.
+*/
