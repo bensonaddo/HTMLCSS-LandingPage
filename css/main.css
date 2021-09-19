@@ -822,3 +822,24 @@ footer {
   background-color: #000000;
   display: flex;
 }
+
+/*
+Footer Sidebar
+
+Dynamically set the content after the footer to "". Hint: Use the :after pseudo-class. This will create a sidebar.
+
+In the same rule(footer:after), Set the background color of the sidebar to #a0a0a0 and set the width to 75%.
+
+Set the position of the sidebar to absolute. Now that the element is absolute, set top, bottom, left and right to 0. Finally set z-index to -1.
+*/
+footer:after {
+  content: "";
+  background-color: #a0a0a0;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
