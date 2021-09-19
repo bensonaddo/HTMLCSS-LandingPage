@@ -780,3 +780,19 @@ letter-spacing - 3px
   font-weight: 200;
   letter-spacing: 3px;
 }
+
+/*
+Full Banner Sidebar Button
+
+Finally, let's create a rule to style the button in the sidebar.
+
+Select the button using .full-banner-sidebar .btn.btn-default - a top margin of 50px, make the text uppercase and change the letter spacing to 1px.
+
+Make sure the button is first in the stacking order by changing the z-index to 1.
+*/
+.full-banner-sidebar .btn.btn-default {
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
