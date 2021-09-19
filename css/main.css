@@ -458,7 +458,7 @@ Center the image horizontally and vertically using background-position.
 Finally, transform the text to uppercase.
 */
 .hero {
-  background-image: url('../img/hero.jpg');
+  background-image: url("../img/hero.jpg");
   height: 400px;
   background-size: cover;
   background-position: center center;
@@ -675,4 +675,20 @@ To start, create a .full-banner class that sets some box model properties. Set p
   padding: 0 15px;
   margin: 50px 0;
   position: relative;
+}
+
+/*
+For the border, we'll use the .full-banner class selector and the pseudo-class :before. Because we're using :before, set content to "" so there is something to style.
+
+Because we used relative positioning for the .full-banner, we can use absolute positioning in this rule. Set position to absolute. Next, set the border to 1px solid #ffffff. With this set, we can adjust the top, bottom, left and right. Use, 30px, 30px, 50px, 50px respectively. Bring the border to the front using z-index: 1.
+*/
+.full-banner:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff;
+  top: 30px;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  z-index: 1;
 }
