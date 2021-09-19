@@ -500,3 +500,8 @@ Select all <p> elements in the .hero <div> and change these font properties: let
 
 For this element's margin, zero out the top, left and right. Add 10px to the bottom. Hint: Using the 3 value shorthand for margin.
 */
+.hero div p {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 21px;
+}
