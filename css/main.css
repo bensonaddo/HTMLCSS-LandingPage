@@ -561,3 +561,18 @@ text-align - center
   line-height: 1;
   text-align: center;
 }
+
+/*
+Banner Text Last Child
+
+The text of the last div in the sales banner is a bit smaller than the other lines.
+
+Create a rule that selects the <div> using the > selector and the :last-child pseudo selector, and make sure it is a descendant of the .banner-text element.
+
+The rule should set the font size to 16px, font weight to 400 and add a top margin of 5px.
+*/
+.banner-text > div:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
