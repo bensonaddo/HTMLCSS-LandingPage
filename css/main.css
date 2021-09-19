@@ -881,7 +881,39 @@ footer a {
   font-size: 12px;
   padding: 0 0 4px;
 }
-
 footer a:hover {
   text-decoration: underline;
+}
+
+/*
+Link Class Attributes
+
+The first <section> in the <footer> should be given a class of lists. Add the link-header class to the following elements:
+
+<div> in footer with contents Customer Support
+<div> in footer with contents Company Info
+<div> in footer with contents Privacy &amp; Terms
+<div> in footer with contents Follow Us
+*/
+
+/*
+Social Links
+
+To help style the social links in the footer, create a rule that has a selector of .social ul li and sets the display to inline-block.
+
+The links in the social list (.social ul li a), should have the following styles:
+
+display - block
+width and height - 23px
+background size and position - 23px 23px center
+*/
+.social ul li {
+  display: inline-block;
+}
+.social ul li a {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-size: 23px 23px;
+  background-position: center;
 }
