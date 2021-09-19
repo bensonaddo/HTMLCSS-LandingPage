@@ -318,3 +318,67 @@ Find the <!-- BRANDING --> block and apply the brand class to the first <div> in
 
 Then, apply the logo class to the <img> tag with the src of img/carved-rock-logo.png
 */
+
+/*
+Search Box
+
+Lets get back to work on the styles on the next header element the search box. Create a new class below the existing styles called .search-box. The search box needs to be sized to 330x30 with 6px padding top/bottom and 12px left/right. Finally, give the search box a full 1px border colored #a0a0a0.
+*/
+.search-box {
+  size: 330x30;
+  padding: 6px 12px;
+  border: 1px #a0a0a0;
+}
+
+/* 
+Search Button
+
+Another element of the header is the search button. Create a class called .search-button. The background color of the button should be #a0a0a0 and the text color should be white(#ffffff).
+
+Its size should be 100x30 pixels and the border and padding should be reset to 0. Hint: It is best practice to use 0 without the px unit.
+*/
+.search-button {
+  size: 100x30;
+  background-color: #a0a0a0;
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+}
+
+/*
+Search Class Attributes
+
+Find the <!-- SEARCH --> block in the index.html file. Apply the search-box class to the text <input> and the search-button class to the <button> element.
+*/
+
+/*
+
+Navigation List
+
+For the .nav-list class, zero out the left padding. Adjust the width of the list to 575px. Add a top margin of 10px.
+*/
+.nav-list {
+  padding-left: 0;
+  width: 575px;
+  margin: 10px;
+}
+
+/*
+
+Navigation List Links
+
+The .nav-list links (li a) should be selected and given the following font properties, 16px, uppercase, 700 weight, with a letter spacing of 0.2px.
+*/
+
+.nav-list li a {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+/*
+Navigation List Class Attribute
+
+In index.html, locate the <ul> in the search block. Give this element a class of nav-list.
+*/
