@@ -939,3 +939,9 @@ Each rule should have a single declaration of background-image. Set this to the 
 .pinterest {
   background-image: url('../img/pinterest.svg');
 }
+
+/*
+Social Class Attributes
+
+Give the last <div> in the <footer> <section> the class social. Then, find the <ul> under the Follow Us <div>. To the first <a> apply the twitter class, second apply facebook, third apply instagram, and fourth apply pinterest
+*/
