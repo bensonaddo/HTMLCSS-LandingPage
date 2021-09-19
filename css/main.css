@@ -659,3 +659,20 @@ There are four top-level <div> elements in a <section>. Give each of these a cat
 
 Next, find the <div>'s after each image in the category <div>'s and apply a class of category-text.
 */
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module4. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module4.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+Full Banner Container
+
+After the categories, we'll create a Full Banner for Trail Reviews. It will have a picture covering 60% of the main container and a sidebar covering the rest.
+
+To start, create a .full-banner class that sets some box model properties. Set padding to 0 15px,and margin to 50px 0. Set the position to relative so that we can create an inset border next.
+*/
+.full-banner {
+  padding: 0 15;
+  margin: 50px 0;
+  position: relative;
+}
