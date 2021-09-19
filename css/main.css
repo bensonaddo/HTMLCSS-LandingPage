@@ -968,3 +968,27 @@ The second should have a selector of .newsletter .link-subheader and declaration
   font-weight: 400;
   margin-bottom: 15px;
 }
+
+/*
+Newsletter Form
+
+In this newsletter section there is also an <input> and a <button>. To select just this <input>create use the selector .newsletter input. The <input> should have a border of 1px solid #364147, width of 200px and bottom margin of 10px.
+
+Select just this <button> with .newsletter button and style it with these properties:
+
+width - 150px
+min-width - auto
+text-transform - uppercase
+letter-spacing - 1px
+*/
+.newsletter input {
+  border: 1px solid #364147;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.newsletter button {
+  width: 150px;
+  min-width: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
