@@ -722,3 +722,16 @@ Set the background-color to #364147, transform the text to uppercase, add paddin
   padding: 30px;
   color: #ffffff;
 }
+
+/*
+Full Banner Sidebar Heading
+
+Style the <h4> heading in the full banner by creating a rule with a selector of .full-banner-sidebar h4 and adding these font declarations - size(40px), weight(700), style(italic), color(#637f94), and overwrite the line height(1).
+*/
+.full-banner-sidebar h4 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  color: #637f94;
+  line-height: 1;
+}
