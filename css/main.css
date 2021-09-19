@@ -542,3 +542,22 @@ Fix the width of the images to 250px by selecting all <img> elements that are de
 .banner img {
   width: 250px;
 }
+
+/*
+Banner Text
+
+Transform the text in the sales banner by constructing a rule that has a selector of .banner-text. Change these text properties:
+
+font-size - 30px
+font-weight - 700
+text-transform - uppercase
+line-height - 1
+text-align - center
+*/
+.banner-text {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
