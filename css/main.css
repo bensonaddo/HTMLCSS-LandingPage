@@ -945,3 +945,26 @@ Social Class Attributes
 
 Give the last <div> in the <footer> <section> the class social. Then, find the <ul> under the Follow Us <div>. To the first <a> apply the twitter class, second apply facebook, third apply instagram, and fourth apply pinterest
 */
+
+/*
+Newsletter Headers
+
+Below the social icons there is a newsletter section. This block has two <div>'s that need styling. Create two rules, one that has the selector .newsletter .link-header and has the properties:
+
+font-size - 12px
+font-weight - 400
+margin-bottom - 5px
+The second should have a selector of .newsletter .link-subheader and declarations that adjust the following: font style(italic), size(12px), weight(400), and a bottom margin(15px).
+*/
+
+.newsletter .link-header {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.newsletter .link-subheader {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
