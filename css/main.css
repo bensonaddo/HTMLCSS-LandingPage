@@ -439,3 +439,223 @@ We have three classes to apply in index.html - .profile, .account, and .profile-
 
 In the <!-- PROFILE --> block assign the first <div> the class profile. Add the account class to the nested <div>. Finally, give the <div> that surrounds the image with an src of img/profile-pic.jpg the profile-pic class.
 */
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module3. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module3.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+Hero Section
+
+Moving further down the page, let's focus on styling the hero image and text.
+
+For the image, construct a class called .hero that adjusts several background properties.
+
+Set background-image to the hero.jpg image (find it in the img folder in the project), height to 400px, and background-size to cover.
+
+Center the image horizontally and vertically using background-position.
+
+Finally, transform the text to uppercase.
+*/
+.hero {
+  background-image: url('../img/hero.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  text-transform: uppercase;
+}
+
+/*
+Hero Headings
+
+To create a more visually appealing hero section we'll add some styling to the <h1> and <h2> elements.
+
+First, create a rule that selects the <h1> in the .hero <div>. Have that rule adjust the position of that <div> by making it relative and then move it to the left by -30px.
+
+Select all <h2> elements in the .hero <div> and change the text color to #faa541.
+
+Next, select both the <h1> and <h2> elements in the .hero <div> and set a few properties to make them consistent.
+
+Adjust the font size to 63px, bump up the font weight to 700, and set the line-height to 0.9.
+*/
+.hero div h1 {
+  position: relative;
+  margin-left: -30px;
+}
+.hero div h2 {
+  color: #faa541;
+}
+.hero div h1,
+.hero div h2 {
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 0.9;
+}
+/*
+Hero Paragraph
+
+Now, let's change the paragraph element to match the <h1> and <h2> elements.
+
+Select all <p> elements in the .hero <div> and change these font properties: letter spacing to 2px, font weight to 700, font size to 21px.
+
+For this element's margin, zero out the top, left and right. Add 10px to the bottom. Hint: Using the 3 value shorthand for margin.
+*/
+.hero div p {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 21px;
+  /* margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0; */
+  margin: 0 10px 0;
+}
+
+/*
+Hero Class Attribute
+
+Open the index.html file and locate the first <section> after the <nav> and apply a class attribute of hero.
+*/
+
+/*
+Banner Container and Image
+
+The sales banner is the first thing in the main content area of the page. Let's draw attention to it.
+
+First, create a class called .banner and adjust the margin of the container set it to 55px 15px.
+
+The banner is the full width of its parent so set width to 100%.
+
+To set the banner apart from the rest of the content set the top border to 1px solid #a0a0a0 and the bottom border to 1px solid #a0a0a0.
+
+Give each element some spacing by setting padding to 25px 0.
+
+Fix the width of the images to 250px by selecting all <img> elements that are descendants of the element with a class of .banner.
+*/
+.banner {
+  margin: 55px 15px;
+  width: 100%;
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 25px 0;
+}
+.banner img {
+  width: 250px;
+}
+
+/*
+Banner Text
+
+Transform the text in the sales banner by constructing a rule that has a selector of .banner-text. Change these text properties:
+
+font-size - 30px
+font-weight - 700
+text-transform - uppercase
+line-height - 1
+text-align - center
+*/
+.banner-text {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+/*
+Banner Text Last Child
+
+The text of the last div in the sales banner is a bit smaller than the other lines.
+
+Create a rule that selects the <div> using the > selector and the :last-child pseudo selector, and make sure it is a descendant of the .banner-text element.
+
+The rule should set the font size to 16px, font weight to 400 and add a top margin of 5px.
+*/
+.banner-text > div:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/*
+Banner and Banner Text Class Attributes
+
+Add the class banner to the first <div> in the <!-- SALES BANNER --> <section>. In this <div>, find the first <div> after the image and give it a class of banner-text
+*/
+
+/*
+Category
+
+After the sales banner we'll create a four column grid using the flex property.
+
+Create a rule with a selector of .category, set flex to 0 0 25%. This will divide the space evenly in four columns.
+
+We need to add a gap between the columns so set padding to 0 15px.
+
+The images in these columns should be full width. Create a rule that selects the <img> elements that are descendants of any .category element and set width to 100%.
+*/
+.category {
+  flex: 0 0 25%;
+  padding: 0 15px;
+}
+.category img {
+  width: 100%;
+}
+
+/*
+Category Text
+
+The text of each category should have the following properties declared in a rule with the selector .category-text:
+
+color - #364147
+padding - 30px 0
+text-transform - uppercase
+text-align - center
+*/
+.category-text {
+  color: #364147;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*
+Category Text Divs
+
+All <div>'s that are children(>) of a .category-text element should have the font properties:
+
+font-size - 16px
+font-weight - 200
+color - #faa541
+*/
+.category-text > div {
+  font-size: 16px;
+  font-weight: 200;
+  color: #faa541;
+}
+
+/*
+
+Category Headings
+
+All <h3> headings that are descendants of a .category-text element should have the font properties:
+
+font-size - 30px
+font-weight - 700
+line-height - 1
+*/
+.category-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/*
+Category Class Attributes
+
+Open index.html and locate the <!-- CATEGORIES --> block.
+
+There are four top-level <div> elements in a <section>. Give each of these a category class.
+
+Next, find the <div>'s after each image in the category <div>'s and apply a class of category-text.
+*/
