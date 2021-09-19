@@ -659,3 +659,146 @@ There are four top-level <div> elements in a <section>. Give each of these a cat
 
 Next, find the <div>'s after each image in the category <div>'s and apply a class of category-text.
 */
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module4. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module4.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+Full Banner Container
+
+After the categories, we'll create a Full Banner for Trail Reviews. It will have a picture covering 60% of the main container and a sidebar covering the rest.
+
+To start, create a .full-banner class that sets some box model properties. Set padding to 0 15px,and margin to 50px 0. Set the position to relative so that we can create an inset border next.
+*/
+.full-banner {
+  padding: 0 15px;
+  margin: 50px 0;
+  position: relative;
+}
+
+/*
+For the border, we'll use the .full-banner class selector and the pseudo-class :before. Because we're using :before, set content to "" so there is something to style.
+
+Because we used relative positioning for the .full-banner, we can use absolute positioning in this rule. Set position to absolute. Next, set the border to 1px solid #ffffff. With this set, we can adjust the top, bottom, left and right. Use, 30px, 30px, 50px, 50px respectively. Bring the border to the front using z-index: 1.
+*/
+.full-banner:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff;
+  top: 30px;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+/*
+Full Banner Image
+
+Next, let's use the flex property to have the image take up 60% of the width of the banner. Set flex to 0 0 58.333333% in a rule with a selector of .full-banner-image.
+Set, background image, size, and position to vista.jpg, cover, and top center, respectively. Set the minimum height of the image to 400px.
+*/
+.full-banner-image {
+  flex: 0 0 58.333333%;
+  width: 60%;
+  background-image: url('../img/vista.jpg');
+  background-size: cover;
+  background-position: top center;
+  min-height: 400px;
+}
+
+/*
+Full Banner Sidebar
+
+The text of the banner is on the right and takes up 40% of the width of the banner, so use flex: 0 0 41.666667% in a rule with a selector of .full-banner-sidebar to adjust this.
+
+Set the background-color to #364147, transform the text to uppercase, add padding of 30px and change the text color to white(#ffffff).
+*/
+.full-banner-sidebar {
+  flex: 0 0 41.666667%;
+  background-color: #364147;
+  text-transform: uppercase;
+  padding: 30px;
+  color: #ffffff;
+}
+
+/*
+Full Banner Sidebar Heading
+
+Style the <h4> heading in the full banner by creating a rule with a selector of .full-banner-sidebar h4 and adding these font declarations - size(40px), weight(700), style(italic), color(#637f94), and overwrite the line height(1).
+*/
+.full-banner-sidebar h4 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  color: #637f94;
+  line-height: 1;
+}
+
+/*
+Full Banner Sidebar Text Decoration
+
+Let's create a decorative element after the heading. This element will be after the .full-banner-sidebar h4 element. Add the :after pseudo class to this selector to create a rule with the following declarations:
+
+content - ""
+width & height - 100x1 pixels
+background-color - #faa541
+margin - 20px auto
+display - block
+*/
+.full-banner-sidebar h4:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #faa541;
+  margin: 20px auto;
+  display: block;
+}
+
+/*
+Full Banner Sidebar Text Styling
+
+For the text below the heading we're going to adjust a few properties. Select the first <div> in the side bar using the group of selectors .full-banner-sidebar > div:nth-of-type(1), and set the following:
+
+font-size - 60px
+font-weight - 700
+line-height - 1
+Select the second <div> in the side bar using the group of selectors .full-banner-sidebar > div:nth-of-type(2):
+
+font-size - 25px
+font-weight - 200
+letter-spacing - 3px
+*/
+.full-banner-sidebar > div:nth-of-type(1) {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+.full-banner-sidebar > div:nth-of-type(2){
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+
+/*
+Full Banner Sidebar Button
+
+Finally, let's create a rule to style the button in the sidebar.
+
+Select the button using .full-banner-sidebar .btn.btn-default - a top margin of 50px, make the text uppercase and change the letter spacing to 1px.
+
+Make sure the button is first in the stacking order by changing the z-index to 1.
+*/
+.full-banner-sidebar .btn.btn-default {
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+/*
+Full Banner Class Attributes
+
+Locate the <!-- FULL BANNER --> block in the index.html file. Give the <section> in this block the class full-banner. Give the first <div> the class of full-banner-image and the second <div> a class of full-banner-sidebar.
+*/
