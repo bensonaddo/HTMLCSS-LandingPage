@@ -802,3 +802,262 @@ Full Banner Class Attributes
 
 Locate the <!-- FULL BANNER --> block in the index.html file. Give the <section> in this block the class full-banner. Give the first <div> the class of full-banner-image and the second <div> a class of full-banner-sidebar.
 */
+
+/*
+To verify your work locally for just this module, run the following command in a terminal: npm run test:module5. The output will let you know which tasks are passing and failing. If you would like to display a visual reference use the command npm run visual:module5.
+
+To verify your work on Pluralsight, commit and push your changes to GitHub and click the Check My Work button.
+
+Footer
+
+The footer completes the landing page. It is divided into two sections - the footer links and a demonstration message.
+
+To style, the footer select the <footer> element and make it a flex container with flex-wrap enabled(wrap). Set position to relative, z-index to 0, and minimum height to 330px. Make the background color black.
+*/
+footer {
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  min-height: 330px;
+  background-color: #000000;
+  display: flex;
+}
+
+/*
+Footer Sidebar
+
+Dynamically set the content after the footer to "". Hint: Use the :after pseudo-class. This will create a sidebar.
+
+In the same rule(footer:after), Set the background color of the sidebar to #a0a0a0 and set the width to 75%.
+
+Set the position of the sidebar to absolute. Now that the element is absolute, set top, bottom, left and right to 0. Finally set z-index to -1.
+*/
+footer:after {
+  content: "";
+  background-color: #a0a0a0;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*
+Lists
+
+All of the content contained in the footer is in unordered lists. To equally space these lists, create a .lists rule and set flex to 0 0 75%. Add a gap between these columns that adds up to 30px(left/right - 15px). The top and bottom padding should be set to 40px.
+*/
+.lists {
+  flex: 0 0 75%;
+  left: 15px;
+  right: 15px;
+  padding: 40px 15px;
+}
+
+/*
+
+Link Headers
+
+Each list has a header, so create a rule with a selector of .link-header and transform the text to uppercase. Set the font size to 16px and font weight to 700. Change the bottom margin to 15px
+*/
+.link-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/*
+
+Links
+
+The anchor tags in the footer should receive the styling: white text color, uppercase, font size of 12px, and the padding should be set to 0 0 4px. Whenever the link is hovered over set text-decoration to underline.
+*/
+footer a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 0 4px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*
+Link Class Attributes
+
+The first <section> in the <footer> should be given a class of lists. Add the link-header class to the following elements:
+
+<div> in footer with contents Customer Support
+<div> in footer with contents Company Info
+<div> in footer with contents Privacy &amp; Terms
+<div> in footer with contents Follow Us
+*/
+
+/*
+Social Links
+
+To help style the social links in the footer, create a rule that has a selector of .social ul li and sets the display to inline-block.
+
+The links in the social list (.social ul li a), should have the following styles:
+
+display - block
+width and height - 23px
+background size and position - 23px 23px center
+*/
+.social ul li {
+  display: inline-block;
+}
+.social ul li a {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-size: 23px 23px;
+  background-position: center;
+}
+
+/*
+Social Icons
+
+There are four anchor tags in the <ul> in the Follow Us list. These links will have icons for social media platforms.
+
+Create four classes .twitter, .facebook, .instagram, and .pinterest.
+
+Each rule should have a single declaration of background-image. Set this to the correct URL for each image. Hint: Look in the img directory.
+*/
+.twitter {
+  background-image: url('../img/twitter.svg');
+}
+.facebook {
+  background-image: url('../img/facebook.svg');
+}
+.instagram {
+  background-image: url('../img/instagram.svg');
+}
+.pinterest {
+  background-image: url('../img/pinterest.svg');
+}
+
+/*
+Social Class Attributes
+
+Give the last <div> in the <footer> <section> the class social. Then, find the <ul> under the Follow Us <div>. To the first <a> apply the twitter class, second apply facebook, third apply instagram, and fourth apply pinterest
+*/
+
+/*
+Newsletter Headers
+
+Below the social icons there is a newsletter section. This block has two <div>'s that need styling. Create two rules, one that has the selector .newsletter .link-header and has the properties:
+
+font-size - 12px
+font-weight - 400
+margin-bottom - 5px
+The second should have a selector of .newsletter .link-subheader and declarations that adjust the following: font style(italic), size(12px), weight(400), and a bottom margin(15px).
+*/
+
+.newsletter .link-header {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.newsletter .link-subheader {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/*
+Newsletter Form
+
+In this newsletter section there is also an <input> and a <button>. To select just this <input>create use the selector .newsletter input. The <input> should have a border of 1px solid #364147, width of 200px and bottom margin of 10px.
+
+Select just this <button> with .newsletter button and style it with these properties:
+
+width - 150px
+min-width - auto
+text-transform - uppercase
+letter-spacing - 1px
+*/
+.newsletter input {
+  border: 1px solid #364147;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.newsletter button {
+  width: 150px;
+  min-width: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*
+Newsletter Class Attributes
+
+In index.html find the <div> after the social icons <ul> and apply a class of newsletter. Give the nested <div> with the content Email Updates a class of link-header. In the <div> immediate below, apply a class of link-subheader.
+*/
+
+/*
+Pluralsight Demo Container
+
+The final section of the page is a notification that this site was made for demonstration purpose only. To style it, create a rule that has a selector of .ps, and add the following properties:
+
+flex - 0 0 25%
+padding - 40px 0
+color - #e5e5e5
+font-size - 16px
+The Pluralsight logo in this section should have a max-width of 230px.
+*/
+.ps {
+  flex: 0 0 25%;
+  padding: 40px 0;
+  color: #e5e5e5;
+  font-size: 16px;
+}
+.ps img {
+  max-width: 230px;
+}
+
+/*
+Pluralsight Demo Styles
+
+Create a rule with the selector .demo and add a padding of 0 30px. Before this demo section (.demo:before) add these properties:
+
+content - ""
+display - block
+width - 100%
+height - 1px
+margin - 30px 0
+background - linear-gradient(to right,#f05a28 0,#e80a89 100%)
+*/
+.demo {
+  padding: 0 30px;
+}
+.demo:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background: linear-gradient(to right,#f05a28 0,#e80a89 100%);
+}
+
+/*
+Copyright
+
+The final piece of the footer is the copyright. Create this one last rule, the selector .copyright, with the properties - flex(0 0 75%), padding(10px 0), font size(12px), and center align the text.
+*/
+.copyright {
+  flex: 0 0 75%;
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*
+Pluralsight Demo Class Attributes
+
+Locate the <!-- PS DEMO --> block in the index.html file. Give the <section> in this block the class ps. Give the nested <div> the class of demo. Give the copyright <div> the class of copyright.
+*/
