@@ -618,3 +618,18 @@ text-align - center
   text-transform: uppercase;
   text-align: center;
 }
+
+/*
+Category Text Divs
+
+All <div>'s that are children(>) of a .category-text element should have the font properties:
+
+font-size - 16px
+font-weight - 200
+color - #faa541
+*/
+.category-text > div {
+  font-size: 16px;
+  font-weight: 200;
+  color: #faa541;
+}
