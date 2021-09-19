@@ -458,7 +458,7 @@ Center the image horizontally and vertically using background-position.
 Finally, transform the text to uppercase.
 */
 .hero {
-  background-image: url("../img/hero.jpg");
+  background-image: url('../img/hero.jpg');
   height: 400px;
   background-size: cover;
   background-position: center center;
@@ -691,4 +691,19 @@ Because we used relative positioning for the .full-banner, we can use absolute p
   left: 50px;
   right: 50px;
   z-index: 1;
+}
+
+/*
+Full Banner Image
+
+Next, let's use the flex property to have the image take up 60% of the width of the banner. Set flex to 0 0 58.333333% in a rule with a selector of .full-banner-image.
+Set, background image, size, and position to vista.jpg, cover, and top center, respectively. Set the minimum height of the image to 400px.
+*/
+.full-banner-image {
+  flex: 0 0 58.333333%;
+  width: 60%;
+  background-image: url('../img/vista.jpg');
+  background-size: cover;
+  background-position: top center;
+  min-height: 400px;
 }
