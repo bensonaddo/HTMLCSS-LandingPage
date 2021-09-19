@@ -855,3 +855,16 @@ All of the content contained in the footer is in unordered lists. To equally spa
   right: 15px;
   padding: 40px 15px;
 }
+
+/*
+
+Link Headers
+
+Each list has a header, so create a rule with a selector of .link-header and transform the text to uppercase. Set the font size to 16px and font weight to 700. Change the bottom margin to 15px
+*/
+.link-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
