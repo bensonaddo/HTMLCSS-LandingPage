@@ -1043,3 +1043,15 @@ background - linear-gradient(to right,#f05a28 0,#e80a89 100%)
   margin: 30px 0;
   background: linear-gradient(to right,#f05a28 0,#e80a89 100%);
 }
+
+/*
+Copyright
+
+The final piece of the footer is the copyright. Create this one last rule, the selector .copyright, with the properties - flex(0 0 75%), padding(10px 0), font size(12px), and center align the text.
+*/
+.copyright {
+  flex: 0 0 75%;
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+}
