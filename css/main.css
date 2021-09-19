@@ -294,7 +294,10 @@ Brand
 Next, setup a class called .brand below the .header-nav class that sets the element size to 170x85 pixels. Adjust the left margin by negative 15 pixels and the right margin by 60 pixels.
 */
 .brand {
-  size: 170x85px;
+  width: 170px;
+  height: 85px;
+  margin-left: -15px;
+  margin-right: 60px;
 }
 
 /*
@@ -303,6 +306,8 @@ Logo
 The logo needs to fit within the 170x85 container. To do this, create a .logo class that sets the max-width to 100% and the height to auto.
 */
 .logo {
+  width: 170px;
+  height: 85px;
   max-width: 100%;
   height: auto;
 }
@@ -325,9 +330,10 @@ Search Box
 Lets get back to work on the styles on the next header element the search box. Create a new class below the existing styles called .search-box. The search box needs to be sized to 330x30 with 6px padding top/bottom and 12px left/right. Finally, give the search box a full 1px border colored #a0a0a0.
 */
 .search-box {
-  size: 330x30;
+  width: 330px;
+  height: 30px;
   padding: 6px 12px;
-  border: 1px #a0a0a0;
+  border: solid 1px #a0a0a0;
 }
 
 /* 
@@ -338,7 +344,8 @@ Another element of the header is the search button. Create a class called .searc
 Its size should be 100x30 pixels and the border and padding should be reset to 0. Hint: It is best practice to use 0 without the px unit.
 */
 .search-button {
-  size: 100x30;
+  width: 100px;
+  height: 30px;
   background-color: #a0a0a0;
   color: #ffffff;
   border: 0;
@@ -360,7 +367,7 @@ For the .nav-list class, zero out the left padding. Adjust the width of the list
 .nav-list {
   padding-left: 0;
   width: 575px;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 /*
@@ -381,4 +388,54 @@ The .nav-list links (li a) should be selected and given the following font prope
 Navigation List Class Attribute
 
 In index.html, locate the <ul> in the search block. Give this element a class of nav-list.
+*/
+
+/*
+Profile
+
+To style the profile section of the header we need two different classes. Name them .profile and .account. The only declaration in the .profile class should set the left margin to auto. The .account class should adjust the alignment on the text to the right, have a full padding of 15px, and a font color and size of #364147 and 18px.
+
+Finally, select all the links that are descendant of all elements with a class of .account. Overwrite the font-size, set it to 14px
+*/
+.profile {
+  margin-left: auto;
+}
+.account {
+  text-align: right;
+  padding: 15px;
+  color: #364147;
+  font-size: 18px;
+}
+.account a {
+  font-size: 14px;
+}
+
+/*
+Profile Picture
+
+We'll round the profile picture and size it down.
+
+Create a class called .profile-pic in main.css.
+
+Make the size of the profile picture container 60x60.
+
+Then create a rule that selects the all descendant img elements of .profile-pic.
+
+To round the image set the border-radius to 100px. Make sure the image fits in the container set max-width to 100%.
+*/
+.profile-pic {
+  width: 60px;
+  height: 60px;
+}
+.profile-pic img {
+  border-radius: 100px;
+  max-width: 100%;
+}
+
+/*
+Profile Class Attribute
+
+We have three classes to apply in index.html - .profile, .account, and .profile-pic.
+
+In the <!-- PROFILE --> block assign the first <div> the class profile. Add the account class to the nested <div>. Finally, give the <div> that surrounds the image with an src of img/profile-pic.jpg the profile-pic class.
 */
